@@ -5,10 +5,10 @@ from tkinter import messagebox
 from PIL import ImageTk,Image
 root = Tk()
 
-root.title("Time Counter")
+root.title("Recorder")
 
 C = Canvas(root,height=10,width=10)
-filename = ImageTk.PhotoImage(Image.open(r'A:\micro.jpg'))
+filename = ImageTk.PhotoImage(Image.open(r'micro.jpg'))
 background_label = Label(root,image=filename )
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 C.pack(side="bottom",)
